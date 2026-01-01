@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cosmic New Year 2026 🚀✨</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: 
+        radial-gradient(circle at 20% 30%, rgba(0, 40, 100, 0.8) 0%, transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(120, 0, 200, 0.6) 0%, transparent 40%),
+        linear-gradient(135deg, #0a0a2a 0%, #1a1a4a 30%, #000033 70%, #00001a 100%);
+    font-family: 'Segoe UI', 'Arial Rounded MT Bold', sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Cosmic background elements */
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    animation: twinkle 3s infinite;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
+}
+
+.container {
+    text-align: center;
+    max-width: 92%;
+    width: 800px;
+    padding: 30px;
+    background: rgba(10, 15, 40, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    border: 1px solid rgba(0, 200, 255, 0.2);
+    box-shadow: 
+        0 0 60px rgba(0, 150, 255, 0.3),
+        0 0 100px rgba(100, 0, 255, 0.2),
+        inset 0 0 30px rgba(0, 200, 255, 0.1);
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, 
+        #00ffff, #0080ff, #8000ff, #ff00ff, 
+        #ff0080, #ff0000, #ffff00, #00ff00);
+    z-index: -1;
+    border-radius: 32px;
+    opacity: 0.4;
+    filter: blur(10px);
+    animation: borderGlow 8s infinite linear;
+}
+
+@keyframes borderGlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.title {
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+    background: linear-gradient(90deg, #00ffff, #0080ff, #8000ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 15px rgba(0, 200, 255, 0.5);
+    animation: titlePulse 2s infinite alternate;
+}
+
+@keyframes titlePulse {
+    from { text-shadow: 0 0 15px rgba(0, 200, 255, 0.5); }
+    to { text-shadow: 0 0 25px rgba(0, 200, 255, 0.8), 0 0 40px rgba(100, 0, 255, 0.6); }
+}
+
+.photo-container {
+    position: relative;
+    display: inline-block;
+    margin: 20px 0 30px;
+}
+
+#photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 
+        0 0 40px rgba(0, 255, 255, 0.6),
+        0 0 80px rgba(100, 0, 255, 0.4);
+    animation: photoGlow 4s infinite alternate, float 6s ease-in-out infinite;
+    border: 3px solid rgba(0, 200, 255, 0.5);
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+#photo:hover {
+    transform: scale(1.03);
+    box-shadow: 
+        0 0 60px rgba(0, 255, 255, 0.8),
+        0 0 120px rgba(100, 0, 255, 0.6);
+}
+
+@keyframes photoGlow {
+    0% { box-shadow: 0 0 40px rgba(0, 255, 255, 0.6), 0 0 80px rgba(100, 0, 255, 0.4); }
+    100% { box-shadow: 0 0 60px rgba(0, 255, 255, 0.8), 0 0 100px rgba(150, 0, 255, 0.6); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+.photo-frame {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    bottom: -15px;
+    border: 3px solid transparent;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #00ffff, #0080ff, #8000ff) border-box;
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) padding-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+    animation: frameRotate 10s infinite linear;
+}
+
+@keyframes frameRotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#text {
+    margin-top: 30px;
+    font-size: 22px;
+    line-height: 1.8;
+    white-space: pre-line;
+    display: none;
+    border-right: 3px solid #00ffff;
+    padding: 20px;
+    background: rgba(0, 10, 30, 0.5);
+    border-radius: 15px;
+    text-align: left;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: blink 1s infinite, textGlow 3s infinite alternate;
+    box-shadow: inset 0 0 20px rgba(0, 100, 255, 0.2);
+    position: relative;
+}
+
+#text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #00ffff, #0080ff, transparent);
+}
+
+@keyframes textGlow {
+    0% { box-shadow: inset 0 0 20px rgba(0, 100, 255, 0.2), 0 0 10px rgba(0, 200, 255, 0.3); }
+    100% { box-shadow: inset 0 0 20px rgba(0, 100, 255, 0.2), 0 0 20px rgba(0, 200, 255, 0.6); }
+}
+
+.glow {
+    text-shadow: 
+        0 0 10px rgba(0, 255, 255, 0.7),
+        0 0 20px rgba(0, 150, 255, 0.5);
+    color: #e0f7ff;
+}
+
+.highlight {
+    color: #ff66cc;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 102, 204, 0.7);
+}
+
+.emoji {
+    font-size: 1.3em;
+    animation: emojiBounce 2s infinite;
+}
+
+@keyframes emojiBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.year-badge {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff0080, #8000ff, #0080ff);
+    color: white;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 50px;
+    margin: 10px 0 30px;
+    box-shadow: 0 0 25px rgba(255, 0, 128, 0.6);
+    animation: badgePulse 2s infinite alternate;
+}
+
+@keyframes badgePulse {
+    0% { transform: scale(1); box-shadow: 0 0 25px rgba(255, 0, 128, 0.6); }
+    100% { transform: scale(1.05); box-shadow: 0 0 35px rgba(255, 0, 128, 0.9); }
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #88aaff;
+    opacity: 0.8;
+}
+
+@keyframes blink {
+    0%, 49% { border-color: #00ffff; }
+    50%, 100% { border-color: transparent; }
+}
+
+@keyframes zoomFade {
+    from { opacity: 0; transform: scale(0.85); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        max-width: 95%;
+    }
+    
+    #photo {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .title {
+        font-size: 2.2rem;
+    }
+    
+    #text {
+        font-size: 19px;
+    }
+}
+</style>
+</head>
+
+<body>
+<!-- Stars in the background -->
+<div id="stars"></div>
+
+<div class="container">
+    <h1 class="title"><i class="fas fa-rocket"></i> Cosmic New Year 2026 <i class="fas fa-fire"></i></h1>
+    
+    <div class="year-badge">
+        <i class="fas fa-calendar-star"></i> ২০২৬ <i class="fas fa-glass-cheers"></i>
+    </div>
+    
+    <div class="photo-container">
+        <div class="photo-frame"></div>
+        <img id="photo" src="photo1.jpg" alt="Slideshow">
+    </div>
+    
+    <div id="text" class="glow"></div>
+    
+    <div class="footer">
+        আমার CEO of Play Boy Friend Porlov এর জন্য বিশেষ বার্তা • Designer Showrav <i class="fas fa-heart" style="color:#ff0066;"></i>
+    </div>
+</div>
+
+<audio id="typeSound" src="typing.mp3"></audio>
+
+<script>
+// Create stars for background
+const starsContainer = document.getElementById('stars');
+for (let i = 0; i < 150; i++) {
+    const star = document.createElement('div');
+    star.classList.add('star');
+    star.style.width = Math.random() * 3 + 1 + 'px';
+    star.style.height = star.style.width;
+    star.style.left = Math.random() * 100 + '%';
+    star.style.top = Math.random() * 100 + '%';
+    star.style.animationDelay = Math.random() * 5 + 's';
+    star.style.animationDuration = Math.random() * 3 + 2 + 's';
+    starsContainer.appendChild(star);
+}
+
+// 🔁 Unlimited photos list
+const photos = [
+  "photo1.jpg",
+  "photo2.jpg",
+  "photo3.jpg",
+  "photo4.jpg"
+];
+
+// 📝 Enhanced roast lines with color formatting
+const lines = [
+"✨ মামা নতুন বছর এসেছে, কিন্তু তোমার অভ্যাস এখনও <span class='highlight'>পুরনোই</span> 😌",
+"🚀 নতুন বছর, নতুন মেয়ে—এইটাই তোর একমাত্র <span class='highlight'>রেজোলিউশন</span>!",
+"📱 ফোনে নাম সেভ করা আছে <span class='highlight'>২০টা</span>,",
+"🤔 কিন্তু কার সাথে কী সম্পর্ক—সেটা তুই নিজেও জানিস না <span class='highlight'>🤣</span>",
+"💔 ভালোবাসা তোর কাছে <span class='highlight'>WiFi</span>-এর মতো—",
+"📶 যেখানে সিগনাল পাস, সেখানেই কানেক্ট! <span class='highlight'>📶💔</span>",
+"🎯 এই বছরে অন্তত <span class='highlight'>একটারে</span> সিরিয়াস হ,",
+"🎬 না হলে তোর প্রেমকাহিনি <span class='highlight'>Netflix</span>-এর থেকেও বেশি সিজন ছাড়িয়ে যাবে <span class='highlight'>😜</span>",
+"🌟 তবুও কী আর বলবো—",
+"🎊 <span class='highlight'>Happy New Year 2026</span>, প্রেমের <span class='highlight'>CEO</span>! <span class='highlight'>🎊🔥</span>"
+];
+
+const photoEl = document.getElementById('photo');
+const textEl = document.getElementById('text');
+const sound = document.getElementById('typeSound');
+
+let pIndex = 0;
+let lIndex = 0;
+let cIndex = 0;
+let slideshowInterval;
+let typingSpeed = 55;
+
+// 🎞️ Enhanced slideshow with better transitions
+function startSlideshow() {
+    pIndex = 0;
+    lIndex = 0;
+    cIndex = 0;
+    textEl.style.display = "none";
+    textEl.innerHTML = "";
+    photoEl.src = photos[pIndex];
+    
+    if (slideshowInterval) clearInterval(slideshowInterval);
+    
+    slideshowInterval = setInterval(() => {
+        pIndex++;
+        if (pIndex >= photos.length) {
+            clearInterval(slideshowInterval);
+            setTimeout(startTyping, 1000);
+        } else {
+            photoEl.style.opacity = 0;
+            setTimeout(() => {
+                photoEl.src = photos[pIndex];
+                photoEl.style.opacity = 1;
+                photoEl.style.transform = "scale(1.05)";
+                setTimeout(() => {
+                    photoEl.style.transform = "scale(1)";
+                }, 300);
+            }, 500);
+        }
+    }, 2000);
+}
+
+// ⌨️ Enhanced typing effect
+function startTyping() {
+    textEl.style.display = "block";
+    textEl.innerHTML = "";
+    typeEffect();
+}
+
+function typeEffect() {
+    if (lIndex < lines.length) {
+        if (cIndex < lines[lIndex].length) {
+            // Add HTML formatting
+            if (lines[lIndex][cIndex] === '<') {
+                // Skip to end of HTML tag
+                const tagEnd = lines[lIndex].indexOf('>', cIndex);
+                textEl.innerHTML += lines[lIndex].substring(cIndex, tagEnd + 1);
+                cIndex = tagEnd;
+            } else {
+                textEl.innerHTML += lines[lIndex][cIndex];
+            }
+            
+            // Play typing sound with variation
+            if (cIndex % 3 === 0) {
+                sound.currentTime = 0;
+                sound.volume = 0.3;
+                sound.play();
+            }
+            
+            cIndex++;
+            setTimeout(typeEffect, typingSpeed);
+        } else {
+            textEl.innerHTML += "\n\n";
+            cIndex = 0;
+            lIndex++;
+            setTimeout(typeEffect, 600);
+        }
+    }
+}
+
+// Start the experience
+startSlideshow();
+
+// Add hover effect to text
+textEl.addEventListener('mouseenter', function() {
+    this.style.boxShadow = 'inset 0 0 30px rgba(0, 150, 255, 0.4), 0 0 30px rgba(0, 200, 255, 0.8)';
+});
+
+textEl.addEventListener('mouseleave', function() {
+    this.style.boxShadow = 'inset 0 0 20px rgba(0, 100, 255, 0.2), 0 0 10px rgba(0, 200, 255, 0.3)';
+});
+
+// Auto-replay after 30 seconds
+setTimeout(() => {
+    if (lIndex === lines.length) {
+        startSlideshow();
+    }
+}, 30000);
+</script>
+
+</body>
+</html>
